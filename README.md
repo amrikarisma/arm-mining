@@ -40,7 +40,7 @@ crontab -e
 Add the following at the end of the line
 exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```
-~/ccminer/start.sh
+@reboot ~/ccminer/start.sh
 ```
 
 Now adjust pools, mineraddress+workername, and network settings for the API.
