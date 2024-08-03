@@ -34,6 +34,7 @@ If the output doesn't show `Architecture: aarch64` or `CPU op-mode(s): 32-bit, 6
 ```bash
 curl -o- -k https://raw.githubusercontent.com/amrikarisma/arm-mining/main/install.sh | bash
 ```
+Setup cron (Optional)
 ```bash
 crontab -e
 ```
@@ -42,7 +43,14 @@ exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```
 @reboot ~/ccminer/start.sh
 ```
-
+Setup auto run when not using cron (Optional)
+```
+nano /etc/profile.d/start_miner.sh
+```
+Then enter the script below:
+```
+ ~/ccminer/start.sh
+```
 Now adjust pools, mineraddress+workername, and network settings for the API.
 exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```bash
